@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(35, 39, 65);
+  font-size: 1.6rem;
+  font-family: "Fira Code", sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #252047;
+  border-radius: 5px;
+}
+
+.custom-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: fit-content;
+  z-index: 100000;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.custom-cursor .circle1 {
+  position: absolute;
+  -webkit-animation: pulse 1s infinite; /* Chrome, Safari, Opera */
+  animation: pulse 1s infinite;
+  background: white;
+  border-radius: 50%;
+  height: 0em;
+  width: 0em;
+  margin-top: 0em;
+  margin-left: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.custom-cursor .circle2 {
+  -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+  animation: pulse 2s infinite;
+  background: #252047;
+  border-radius: 50%;
+  height: 0em;
+  width: 0em;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+  }
+  50% {
+    opacity: 0.9;
+    height: 1.5em;
+    width: 1.5em;
+  }
+  100% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+.text-accent {
+  color: #b2a8e1;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgb(35, 39, 65);
+  z-index: 99999;
+  border-bottom: 0.1px solid #ffffff;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% auto;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    width: 90%;
+  }
+}
+
+header nav .logo {
+  width: 60px;
+}
+
+header nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav .nav-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+header nav .nav-links li {
+  display: inline-block;
+}
+
+header nav .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav .nav-links li a:hover {
+  color: #b2a8e1;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links .hide-mobile {
+    display: none !important;
+  }
+}
+
+header nav .nav-links .resume {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-appearance: none;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1.2;
+  min-width: 2.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  outline: none;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+}
+
+main {
+  margin-top: 30rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 15rem;
+  }
+}
+
+main .container {
+  color: #ffffff;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+@media (max-width: 768px) {
+  main .container {
+    width: 90%;
+  }
+}
+
+main .container .main__header_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .container .main__header_content .image__wrapper {
+  width: 30%;
+}
+
+main .container .main__header_content .image__wrapper img {
+  width: 100%;
+}
+
+main .container .introduction h2,
+main .container .introduction p {
+  margin: 2.5rem 0;
+}
+
+main .container .introduction h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  main .container .introduction h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .introduction--details {
+  color: #a0aec0;
+  width: 50%;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  main .container .introduction--details {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  main .container .introduction--details {
+    width: 100%;
+  }
+}
+
+main .container .introduction--button, .resume--button {
+  color: #b2a8e1;
+  text-decoration: none;
+  border: 2px solid #b2a8e1;
+  font-weight: 600;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  line-height: 1.2;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+main .container .introduction--button:hover, .resume--button:hover {
+  background: #b2a8e1;
+  color: #ffffff !important;
+}
+
+main .container .about {
+  margin: 15rem 0;
+}
+
+main .container .about__header {
+  margin: 4rem 0;
+}
+
+main .container .about__header h2 {
+  font-size: 3rem;
+}
+
+main .container .about__header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .about__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .about__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  main .container .about__content {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .about__content p {
+  margin: 2.5rem 0;
+  color: #a0aec0;
+  line-height: 2;
+}
+
+main .container .about__content .technologies {
+  color: #a0aec0;
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+main .container .about__content .technologies ul li {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  main .container .about__content .technologies {
+    width: 70%;
+  }
+}
+
+main .container .about__content .avatar {
+  padding: 0 4rem;
+}
+
+@media (max-width: 768px) {
+  main .container .about__content .avatar {
+    padding: 0;
+  }
+}
+
+main .container .about__content .avatar img {
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  border-radius: 0.25rem;
+}
+
+main .container .projects {
+  margin: 20rem 0;
+}
+
+main .container .projects__header {
+  margin: 4rem 0;
+}
+
+main .container .projects__header h2 {
+  font-size: 3rem;
+}
+
+main .container .projects__header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .projects__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* main .container .projects .all-projects > div {
+  margin: 2rem 0;
+} */
+
+main .container .projects .all-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  grid-auto-flow: dense;
+}
+
+@media (max-width: 768px) {
+  main .container .projects .all-projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+@media (max-width: 499px) {
+  main .container .projects .all-projects {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
+
+main .container .projects__card {
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  padding: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  main .container .projects__card {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .projects__card:hover {
+  background: rgb(35, 39, 65);
+  box-shadow: 0 0 30px #000000;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+main .container .projects__card--content--header, main .container .projects__card--content--about, main .container .projects__card--content--tech, main .container .projects__card--content--links {
+  margin: 1.5rem 0;
+}
+
+main .container .projects__card--content--header {
+  font-size: 1.8rem;
+}
+
+main .container .projects__card--content--about {
+  color: #a0aec0;
+  line-height: 2;
+  height: 120px;
+}
+
+main .container .projects__card--content--tech {
+  font-weight: bold;
+}
+
+main .container .projects__card--content--tech span {
+  margin-right: 2rem;
+}
+
+main .container .projects__card--content--links a {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+
+main .container .projects__card--content--links a:hover {
+  color: #b2a8e1;
+}
+
+main .container .contact {
+  margin: 20rem 0;
+}
+
+main .container .contact__header {
+  margin: 4rem 0;
+}
+
+main .container .contact__header h2 {
+  font-size: 3rem;
+}
+
+main .container .contact__header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .contact__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__details {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .contact__details .mail-link {
+  color: #a0aec0;
+}
+
+main .container .contact__details .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__details .social-links {
+    margin: auto;
+    margin-top: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+}
+
+main .container .contact__details .social-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=style.css.map */

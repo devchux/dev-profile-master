@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Theme color change -->
+    <meta name="theme-color" content="#130F23" />
+    <!-- Page Title -->
+    <title>Onwuka Ransom - Data Scientist</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Hey there! I'm Chukwudi Eze, a frontend engineer based in Lagos, Nigeria. I build awesome web applications that are scalable, optimised and highly accessible">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- External Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Micron CDN -->
+    <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+    <!-- Typewritter Js -->
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body id="smooth-scroll">
+    <div class="custom-cursor">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    <header id="my-header">
+
+        <!-- Navigation Bar -->
+
+        <nav>
+            <div class="logo" id="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+
+            <ul class="nav-links">
+                <li class="hide-mobile"><a href="#about">About</a></li>
+                <li class="hide-mobile"><a href="#projects">Projects</a></li>
+                <li class="hide-mobile"><a href="#contact">Contact</a></li>
+                <li><a href="https://docs.google.com/document/d/1mpu_BZ7U6UwjSYnFxH6XXNaBJC59Ig9ouA9_IRaQY0E/edit?usp=sharing" class="resume resume--button" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Main Content -->
+        <div class="container">
+            <div class="main__header_content">
+                <div class="introduction">
+                    <p class="text-accent">Hello 👋, my name is</p>
+                    <h2 class="introduction--name">Onwuka Ransom</h2>
+                    <h2 id="introduction--about">Creativity • Quality • Data</h2>
+                    <a href="mailto:ransomonwuka@gmail.com" data-micron="bounce" class="introduction--button">Get In
+                        Touch</a>
+                </div>
+                <!-- <div class="image__wrapper">
+                    <img src="./assets/images/3d_image.png" alt="3D image" id="header-image" >
+                </div> -->
+            </div>
+
+            <!-- About Me -->
+            <div class="about" id="about">
+                <div class="about__header">
+                    <h2><span class="text-accent">01. </span> About Me</h2>
+                </div>
+
+                <div class="about__content" data-aos="fade-up">
+                    <div class="details">
+                        <p>Hey there! I'm Chukwudi, a software developer based in Lagos, Nigeria 
+                            with a passion for solving UI/UX problems using JavaScript and its frameworks</p>
+                        <p>I'm really passionate about using technology to design softwares that helps promote to 
+                            businesses and societal welfare at large.
+                        </p>
+
+                        <p>
+                            Tools i make use of include,
+                            <div class="technologies">
+                                <ul>
+                                    <li>HTML & CSS</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>TypeScript</li>
+                                    <li>ReactJs</li>
+                                    <li>Redux</li>
+                                    <li>Apollo Client</li>
+                                </ul>
+                                <ul>
+                                    <li>Next.js</li>
+                                    <li>Angular</li>
+                                    <li>Figma</li>
+                                    <li>NodeJs</li>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+
+                        </p>
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/images/ransom.jpeg" alt="Onwuka Ransom">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects i have worked on -->
+            <div class="projects" id="projects">
+                <div class="projects__header">
+                    <h2><span class="text-accent">02. </span> Recent Work </h2>
+                </div>
+                <div class="all-projects">
+                    <!-- All Projects will be appended here by Javascript -->
+                </div>
+            </div>
+
+            <!-- Contact Me -->
+            <div class="contact" id="contact">
+                <div class="contact__header">
+                    <h2><span class="text-accent">03. </span> Get In Touch </h2>
+                </div>
+
+                <div class="contact__details" data-aos="fade-up">
+                    <div class="mail-link">
+                        <p>Have a little something, something you want to talk to me about? Well, why dont you send me a
+                            mail now. I will love to be a part of something great. </p>
+                        <br />
+                        <a href="mailto:ransomonwuka@gmail.com" class="introduction--button">Send a mail</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/UCHENNA07" target="_blank"><span class="fa fa-github"></span></a>
+                        <a href="https://www.linkedin.com/in/onwuka-uchenna/" target="_blank"><span
+                                class="fa fa-linkedin"></span></a>
+                        <a href="https://twitter.com/devchux" target="_blank"><span class="fa fa-twitter"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        var text = document.getElementById('introduction--about');
+        var typewriter = new Typewriter(text, {
+            loop: true
+        });
+
+        typewriter.typeString('<strong>Data Analyst!</strong>')
+            .pauseFor(100)
+            .deleteAll()
+            .typeString('Analysis • Visualization') 
+            .pauseFor(100)
+            .deleteAll()
+            .typeString('Architecting data!')
+            .start();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25081891.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <!-- End of HubSpot Embed Code -->
+
+  <script>
+    particlesJS("main-content", {"particles":{"number":{"value":160,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+  </script>
+</body>
+
+</html>

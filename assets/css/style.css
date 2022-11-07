@@ -371,8 +371,6 @@ main .container .about__content .avatar {
 main .container .about__content .avatar img {
   max-width: 100%;
   height: auto;
-  -webkit-filter: grayscale(100);
-          filter: grayscale(100);
   border-radius: 0.25rem;
 }
 

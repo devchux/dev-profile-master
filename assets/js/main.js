@@ -4,7 +4,7 @@ let projects = [
     description:
       "Displays categorically the various components and features of how a data set can be analysed and interpreted.",
     technologies: ["Python", "Pandas", "Numpy"],
-    github: null,
+    github: "https://github.com/UCHENNA07/A-Data-Analysis-Project-With-Pandas-Numpy-And-Principal-Component-Analysis",
     preview: null,
     image: "",
   },
@@ -13,7 +13,7 @@ let projects = [
     description:
       "This is a practical analysis and visualization project about energy consumption by different countries over a certain period of time. ",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/A-Python-Data-Visualization-Project-On-Energy-Consumption",
     preview: null,
     image: "",
   },
@@ -22,7 +22,7 @@ let projects = [
     description:
       "This project lays emphasis on time series forecasting, checking stationaries of a time series, making time series stationary.",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/Time-Series-Analysis-with-Python",
     preview: null,
     image: "",
   },
@@ -31,7 +31,7 @@ let projects = [
     description:
       "This project solely relies on utilizing application programming interface to get data from a website.",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/Python-Data-Extraction-And-Analysis-From-The-Web-Utilizing-API",
     preview: null,
     image: "",
   },
@@ -40,7 +40,7 @@ let projects = [
     description:
       "Utilized Power BI to create an informative dashboard for Superstore report.",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/Data-Visualization-Utilizing-Power-BI",
     preview: null,
     image: "",
   },
@@ -49,7 +49,7 @@ let projects = [
     description:
       "Visualization of Walmart data using Microsoft Power BI",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/Data-Transformation-and-Visualization-Utilizing-Microsoft-Power-BI",
     preview: null,
     image: "",
   },
@@ -57,7 +57,7 @@ let projects = [
     name: "Data analysis and Visualization",
     description: "Data cleaning, analysis and visualization with Microsoft Excel.",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/Data-Analysis-and-Visualization-Utilizing-Microsoft-Excel",
     preview: null,
     image: "",
   },
@@ -65,7 +65,7 @@ let projects = [
     name: "SQL Project ",
     description: "Using Data Manipulation Language (DML), Data Control Language (DCL) and Data Definition Language (DDL) for the purpose of accessing all information in the database.",
     technologies: [],
-    github: null,
+    github: "https://github.com/UCHENNA07/SQL-Project",
     preview: null,
     image: "",
   },

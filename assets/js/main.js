@@ -63,8 +63,8 @@ let projects = [
   },
   {
     name: "SQL Project ",
-    description: "This SQL project contains several queries which includes Data Manipulation Language (DML), Data Control Language (DCL) and Data Definition Language (DDL) for the purpose of accessing all information in the database.",
-    technologies: ["React", "Tailwind CSS"],
+    description: "Using Data Manipulation Language (DML), Data Control Language (DCL) and Data Definition Language (DDL) for the purpose of accessing all information in the database.",
+    technologies: [],
     github: null,
     preview: null,
     image: "",

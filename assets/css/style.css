@@ -456,7 +456,7 @@ main .container .projects__card--content--header {
 main .container .projects__card--content--about {
   color: #a0aec0;
   line-height: 2;
-  height: 120px;
+  min-height: 120px;
 }
 
 main .container .projects__card--content--tech {
